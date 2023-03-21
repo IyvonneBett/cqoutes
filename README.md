@@ -12,7 +12,7 @@ This application is provided “AS IS” with no express or implied warranty for
 ### Prerequisites:
 - Experience as Java Developer
 - Java JDK 8 installed and available via your Operating System ``PATH``.
-- A **Java EE IDE** with **Maven**. In our tutorials, we use **[Netbeans 8.1](https://netbeans.org/downloads/)** for Windows.
+- A **Java EE IDE** with **Maven**. In our tutorials, we use **[Netbeans 16](https://netbeans.org/downloads/)** for Windows.
 - A **Java EE Application Server**. In our tutorials, we use the **Glassfish 4.1.1** server (embedded with Netbeans).
 - Access to Oracle Identity Cloud Service with authorization rights to manage Applications (Identity Domain Administrator, Security Administrator, or Application Administrator)
 
@@ -36,20 +36,3 @@ keytool -import -keystore cacerts.jks -trustcacerts -file "C:\temp\idcs.cer" -st
  2. In **`ClientConfig.java`**, update the `CLIENT_ID`, the `CLIENT_SECRET`, and the `IDCS_URL` with values according to your Oracle Identity Cloud Service instance.
  3. Rebuild and Launch the cquotes application.
  4. Access the application (in Glassfish: `https://localhost:8181/cquotes`)
-
-### <a name="license"></a> License
-
-Copyright (c) 2016, Oracle and/or its affiliates. All rights reserved.
-
-You may not use the identified files except in compliance with the
-Universal Permissive License (UPL), Version 1.0 (the "License.")
-
-You may obtain a copy of the License at
-https://opensource.org/licenses/UPL. 
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-
-See the License for the specific language governing permissions and
-limitations under the License.
